@@ -54,26 +54,20 @@ Il plot risulta:
 BestSplit, BestGain = None
 for f in features:
     for t in thresholds:
+        Gain = godness of the split (f <= t)
+        if Gain >= BestGain:
+            BestGain = Gain
+            BestSplit = (f <= t)
+        if BestGain == 0 or other stopping criterion is met:
+            mu = best prediction for D
+            return Leaf(mu)
+        f, t = those of BestSplit = (f <= t)
+        d_l = {x in D | x_f <= t} # left partition
+        L = BuildTree(d_l) # left child
+        d_r = {x in D | x_f > t} # right partition
+        R = BuildTree(d_r) # right child
+        return Node(L, R)
 ```
-
-
-1. *BestSplit*, *BestGain* = *None*
-1. **For each** feature $f$
-1. $\quad$ **For each** threshold $t$
-1. $\quad\quad$ *Gain* $\gets$ goodness of the split $(f \leq t)$
-1. $\quad\quad$ **If** Gain>=BestGain:
-1. $\quad\quad\quad$ *BestGain* $\gets$ *Gain*
-1. $\quad\quad\quad$ BestSplit* $\gets$ $(f \leq t)$
-1. **If** *BestGain*$=0$ or *other stopping criterion is met*:
-1. $\quad$ $\mu \gets$ the best prediction for ${\cal D}$
-1. $\quad$ **Return** $Leaf(\mu)$
-1. Let $f$ and $t$ be those of BestSplit = $(f \leq t)$
-1. ${\cal D}_L \gets \{x \in {\cal D} ~|~ x_f\leq t\}$ *(Left Partition)*
-1. $L \gets$  **BuildTree**(${\cal D}_L$) *(Left Child)*
-1. ${\cal D}_R \gets \{x \in {\cal D} ~|~ x_f > t\}$ *(Right Partition)*
-1. $R \gets$  **BuildTree**(${\cal D}_R$) *(Right Child)*
-1. **Return** $Node(L,R)$
-
 Vogliamo creare un modello per questo dataset.
 
 Una soluzione molto mecacnica consiste nel
