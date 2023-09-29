@@ -37,7 +37,9 @@ Lo split migliore (nel caso degli alberi induttivi) è lo split che **massimizza
 ### gain
 Rappresenta la bontà di uno split, indicato come la differenza tra l'errore del nodo padre e la somma pesata degli errori dei figli.
 
+### algoritmo d'esempio
 
+### caratteristiche degli alberi di decisione induttivi
 
 
 
