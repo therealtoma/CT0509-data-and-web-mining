@@ -31,8 +31,11 @@ Questi algoritmi devono sapere come come creare un predicato e la relativa rispo
 - **attributi ordinali**: simili agli attributi nominali, ma deve essere rispettato un ordine (raggruppare la dimensione di una maglietta in {small, medium}, {large, extra large} è lecito, {small, large} e {medium, extra large} non è lecito)
 - **attributi continui**: per gli attributi continui la condizione può essere espressa come un test di confronto ($A \le v$) e si riceve un risultato binario (vero o falso)
 
+### come scegliere il miglior split
+Lo split migliore (nel caso degli alberi induttivi) è lo split che **massimizza** il **gain** rappresentato come la differenza di errore tra il nodo padre i figli; essendo il padre sempre fisso, si tratta semplimente di trovare il figlio che minimizza l'errore.
 
-
+### gain
+Rappresenta la bontà di uno split, indicato come la differenza tra l'errore del nodo padre e la somma pesata degli errori dei figli.
 
 
 
