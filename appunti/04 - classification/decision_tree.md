@@ -1,7 +1,7 @@
 # Decision Tree
 ###### capitolo 4.3 del libro
 
-### come funziona
+### come funziona
 L'idea dietro al decision tree (albero delle decisioni) consiste nel classificare gli elementi in **due categorie**.
 Vengono poste una serie di domande riguardo le proprietà del record che si intende testare, continuando ricorsivamente a porre *follow-up questions* fino a quando non si riceve una conclusione (**label**)
 L'albero delle decisione è un albero con 3 tipi di nodi:
@@ -11,7 +11,7 @@ L'albero delle decisione è un albero con 3 tipi di nodi:
 
 Il **nodo foglia** rappresenta la label assegnata al record, gli altri nodi contengono le condizioni di test per arrivate alle foglie.
 
-### come costruire un decision tree
+### come costruire un decision tree
 
 La costruzione del decision tree *perfetto* è computazionalmente impossibile a causa delle troppe combinazioni possibili.
 Sono stati pensati degli algoritmi **greedy** per la creazione di alberi di decisione.
