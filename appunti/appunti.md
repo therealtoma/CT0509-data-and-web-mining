@@ -92,7 +92,7 @@ $$
 ? \le \ ?
 $$
 
-Qeusto oggetto è chiamato **split** e l'obiettivo è dividere il dataset in due parti.
+Questo oggetto è chiamato **split** e l'obiettivo è dividere il dataset in due parti.
 
 Viene combinata ogni feature con ogni soglia possibile (considerate solamente le soglie presenti all'interno del dataset)
 
