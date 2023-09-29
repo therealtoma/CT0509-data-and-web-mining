@@ -1,7 +1,12 @@
 # Decision Tree
+
+## come funziona
+L'idea dietro al decision tree (albero delle decisioni) consiste nel classificare 
+
+###### capitolo 4.3 del libro
 Prendiamo come esempio la seguente immagine che rappresenta un dataset due features e una serie di istanze.
 Il plot risulta:
-![immagine](./assets/4-quadrants.png)
+![immagine](../assets/4-quadrants.png)
 
 
 ```python
