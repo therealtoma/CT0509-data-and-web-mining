@@ -38,21 +38,7 @@ Lo split migliore (nel caso degli alberi induttivi) è lo split che **massimizza
 Rappresenta la bontà di uno split, indicato come la differenza tra l'errore del nodo padre e la somma pesata degli errori dei figli.
 
 ### algoritmo d'esempio
-
-### caratteristiche degli alberi di decisione induttivi
-
-
-
-
-
-
-
-
-Prendiamo come esempio la seguente immagine che rappresenta un dataset due features e una serie di istanze.
-Il plot risulta:
-![immagine](../assets/4-quadrants.png)
-
-
+Consideriamo ora un esempio di un algoritmo per la costruzione di un albero di decisione:
 ```python
 BestSplit, BestGain = None
 for f in features:
@@ -71,6 +57,32 @@ for f in features:
         R = BuildTree(d_r) # right child
         return Node(L, R)
 ```
+Spieghiamo ora il funzionamento dell'algoritmo:
+- `BestSplit` e `BestGain` inizialmente sono impostati a `None`
+`BestSplit` memorizza l'attuale condizione di split (basata su una feature e una soglia), `BestGain` è il guadagno di informazione massimo fino ad ora
+- L'algoritmo scorre tutte le feature e le soglie possibili (ha senso considerare solamente le soglie presenti all'interno del dataset)
+- Nel caso in cui il gain ottenuto è maggiore o uguale di quello precedente, vengono aggiornati `BestGain` e `BestSplit` con quelli attuali
+- Se `BestGain` è zero oppure viene soddisfatto un altro criterio di arresto l'algoritmo termina ritornando la foglia con la migliore predizione
+- Se non sono raggiunti criteri di arresto, l'algoritmo crea uno split basandosi su `BestSplit` dove una condizione è vera (l_1) e l'altra è falsa (l_2)
+- Chiamata ricorsiva sui due sottoalberi
+
+
+
+
+### caratteristiche degli alberi di decisione induttivi
+
+
+
+
+
+
+
+Prendiamo come esempio la seguente immagine che rappresenta un dataset due features e una serie di istanze.
+Il plot risulta:
+![immagine](../assets/4-quadrants.png)
+
+
+
 Vogliamo creare un modello per questo dataset.
 
 Una soluzione molto mecacnica consiste nel
