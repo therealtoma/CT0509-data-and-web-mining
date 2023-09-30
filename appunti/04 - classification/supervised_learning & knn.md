@@ -18,3 +18,10 @@ Il classificatore **KNN** è un metodo di classificazione semplice, utilizzato s
 - *non parametrico*: non fa assunzioni riguardo alla distribuzione dei dati
 - *adatto al multi-case*: può essere utilizzato per problemi di classificazione con più di due classi
 #### svantaggi
+- *costo computazionale*: dato che deve calcolare la distanza tra il punto in input e ogni punto del set, può risultare computazionalmente costoso, specie per grandi set di dati
+- *sensibile a caratteristiche irrilevanti*: se il dataset contiene caratteristiche irrilevanti, queste possono influenzare negativamente il risultato finale
+- *sensibile agli outliers*: gli outliers possono avere un impatto negativo sulle prestazioni
+
+#### ottimizzazione delle prestazioni
+- **scelta del k**: è fondamentale scegliere un valore di $k$ ottimale, infatti, se è troppo piccolo il modello risulta sensibile al rumore, se è troppo grande potrebbe essere computazionalmente costoso
+- **ponderazione**: i punti più vicini all'input hanno maggiore importanza rispetto a quelli più distanti
