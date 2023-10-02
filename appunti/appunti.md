@@ -2,7 +2,7 @@
 
 ## training set
 Durante la durata del corso verranno utilizzati dataset a forma di **matrice** (banalmente dei file csv) composti come segue:
-- le *righe* rappresentano le **istanze** 
+- le *righe* rappresentano le **istanze**
 - le *colonne* sono le **features** (proprietà) del nostro dataset
 
 Capita che, di tutto il dataset, una colonna è quella che ci interessa trovare, essa è chiamata **label**.
@@ -43,3 +43,24 @@ La normalizzazione può essere fatta in due modi:
 - **normalizzazione standard**: non standardizza ogni feature, dipende dalla varianza. Una feature con una varianza molto alta avrà un peso maggiore rispetto ad una con varianza bassa.
 
 La distanza euclidea (teorema di pitagora) assume che tutti le feature hanno la stessa importanza, cosa che non è quasi mai vera.
+
+# ricapitoliamo (02/10/2023)
+domande fast per ricapitolare, non provengono dal testo d'esame
+## KNN Classifier
+- cosa succede se k tende a infinito?
+  - viene preso l'intero dataset
+- cosa fa il classificatore al tempo di training?
+  - memorizza il training set (possibilmente indicizzandolo)
+- che impatto ha la scala delle faatures?
+  - il calcolo della disrtanza è dominato dalla features con range [min-max] maggionre
+
+## binary decision tree
+- che impatto ha la scala (min-max) delle features
+  - nessun
+- perche binary?
+  - un nodo puo avere solo 2 figli
+- quante features possono essere conivolte nel predicato di un nodo
+  - dipende da ...
+- qual è la profondita massima
+  - corrisponde al numero di istanze
+-
