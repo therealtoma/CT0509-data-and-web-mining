@@ -25,3 +25,6 @@ La scelta del corretto valore di k è fondamentale. Se k è troppo piccolo, il m
 **best practices** 
 - scegliere un valore di k pari a $\sqrt{n}$ dove $n$ rappresenta il numero di osservazioni all'interno del dataset.
 - scegliere un valore di k **dispari** in modo da evitare confusioni tra due classi.
+
+#### quando usare knn
+è possibile utilizzarlo quando le features hanno delle **labels**, qundo i dati sono privi di **rumore** e quando il dataset è **piccolo** (knn è considerato un *lazy learner*)
