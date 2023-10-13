@@ -4,3 +4,5 @@
 - Sezione 5.2
 
 [python data science handbook](https://drive.google.com/file/d/1aB105lLMH3necZWv3ynPx3qqhI2tv32N/view?usp=sharing)
+
+[yt video](https://www.youtube.com/watch?v=4HKqjENq9OU)
