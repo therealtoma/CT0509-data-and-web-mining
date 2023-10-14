@@ -16,3 +16,6 @@ La versione più semplice di una linea di regressione con una variabile dipenden
 #### intuizione dietro alla linea di regressione
 La linea di regressione è una linea che minimizza la distanza tra i punti e la linea stessa, in questo modo si ottiene la linea che meglio si adatta ai dati.
 La miglio linea di regression è quella con la minore distanza tra i valori effettivi e quelli predetti; esistono diversi modi per trovare questa distanza, il più comunemente usato è il metodo dei minimi quadrati.
+
+# regressione lineare multipla
+a differenza della regressione lineare semplice, la regressione multipla è $Y = m_1 \cdot x_1 + m_2 \cdot x_2 \cdot \ldots \cdot m_n \cdot x_n + c$ dove ogni variabile indipendente $x$ ha il proprio coefficiente $m$.
