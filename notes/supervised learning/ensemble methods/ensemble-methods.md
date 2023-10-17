@@ -16,3 +16,17 @@ viene solitamente indicato come **bootstrap aggregating**, è una tecnica di ens
 - minimizza l'overfitting dei dati
 - migliora la precisione del modello
 - lavorare con dataset di grandi dimensioni risulta efficiente
+
+#### boosting
+l'idea di base è quella di combinare una serie di modelli più **deboli** per poterne creare uno più **robusto**
+
+**come applicare il boosting**
+- ad ogni sample viene assegnato lo stesso peso
+- questo set viene passato al primo modello che si occupa di fare le predizioni
+- l'algoritmo di boosting valuta quindi le predizioni e aumenta il peso in caso di maggior errore e lo diminuisce in caso di minor peso
+- viene passato il risultato ad un altro modello che ripeterà il passaggio
+- ripetuti iterativamente i passaggi 2 e 3 fino a quando l'errore non scende al di sotto di una soglia indicata
+
+**vantaggi del boosting**
+- è in grado di lavorare in modo efficiente con dataset di grandi dimensioni
+- continua a mantenere l'accuratezza nonostante ci siano dati mancanti
