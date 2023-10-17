@@ -30,3 +30,9 @@ l'idea di base è quella di combinare una serie di modelli più **deboli** per p
 **vantaggi del boosting**
 - è in grado di lavorare in modo efficiente con dataset di grandi dimensioni
 - continua a mantenere l'accuratezza nonostante ci siano dati mancanti
+
+#### differenze
+Mentra l'algoritmo di **bagging** seleziona casualmente i sotto-dataset, l'algoritmo di **boosting** si concentra sui dati che nel ciclo precedente hanno ottenuto un peso maggiore.
+L'algoritmo di **bagging** non è sensibile all'overfitting, l'algoritmo di **boosting** minimizza il bias.
+**bagging** minimizza la varianza, mentre **boosting** minimizza il bias
+nel **bagging** ogni modello ha lo stesso peso, nel **boosting** è assegnato un peso in base alle performance
